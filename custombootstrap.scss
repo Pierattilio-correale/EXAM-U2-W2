@@ -1,0 +1,26 @@
+@import "./scss/functions";
+@import "./scss/variables";
+
+$new-primary: #141414;
+$new-secondary: #646467;
+$new-color: #333333;
+
+$new-theme-colors: (
+  "primary": $new-primary,
+  "secondaty": $new-secondary,
+  "colorn": $new-color,
+);
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+$fs7: 0.8rem;
+$fs8: 0.7rem;
+$fs9: 0.6rem;
+$fs10: 0.5rem;
+$new-font-sizes: (
+  7: $fs7,
+  8: $fs8,
+  9: $fs9,
+  10: $fs10,
+);
+$font-sizes: map-merge($font-sizes, $new-font-sizes);
+
+@import "./scss/bootstrap.scss";
