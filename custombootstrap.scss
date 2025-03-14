@@ -4,11 +4,12 @@
 $new-primary: #141414;
 $new-secondary: #646467;
 $new-color: #333333;
-
+$new-btncolor: #e0e0e0;
 $new-theme-colors: (
   "primary": $new-primary,
   "secondaty": $new-secondary,
   "colorn": $new-color,
+  "btncolorextra": $new-btncolor,
 );
 $theme-colors: map-merge($theme-colors, $new-theme-colors);
 $fs7: 0.8rem;
